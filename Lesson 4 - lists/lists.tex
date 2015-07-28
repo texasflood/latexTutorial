@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{parskip}
+\usepackage{enumerate} % This line is essential for allowing you to create numbered lists.
+
+\begin{document}
+Here, we shall create lists using the \texttt{enumerate} package.
+
+\section{Bullet points}
+Bullet points are created using \texttt{itemize}:
+
+\begin{itemize}
+  \item Red
+  \item Yellow
+  \item Green
+\end{itemize}
+
+\section{Numbers}
+Numbered lists are created using \texttt{enumerate}:
+
+\begin{enumerate}
+  \item Football
+  \item Rugby
+  \item Cricket
+\end{enumerate}
+
+\section{Custom}
+Custom worded lists are created using \texttt{description}:
+
+\begin{description}
+  \item[First] Place the eggs in a single layer at the bottom of a saucepan. Cover with at least an inch or two of cold water
+  \item[Second] Turn off the heat, keep the pan on the hot burner, cover, and let sit for 10-12 minutes
+  \item[Finally] Strain out the water from the pan and run cold water over the eggs to cool them quickly and stop them from cooking further
+\end{description}
+
+\section{Nested}
+You can even nest lists of different types:
+\begin{enumerate}
+  \item Dog
+    \begin{enumerate}
+      \item Labrador
+        \begin{enumerate}
+          \item English Labrador
+          \item American Labrador
+        \end{enumerate}
+      \item Alsation
+      \item Pug
+    \end{enumerate}
+  \item Cat
+    \begin{itemize}
+      \item Persian
+      \item British shorthair
+      \item Siamese
+      \item Bengal
+    \end{itemize}
+  \item Elephant
+
+    Elephants are large mammals of the family Elephantidae and the order Proboscidea. Two species are traditionally recognised, the African elephant (Loxodonta africana) and the Asian elephant (Elephas maximus), although some evidence suggests that African bush elephants and African forest elephants are separate species (L. africana and L. cyclotis respectively). Elephants are scattered throughout sub-Saharan Africa, South Asia, and Southeast Asia.
+  \item Zebra
+\end{enumerate}
+\end{document}

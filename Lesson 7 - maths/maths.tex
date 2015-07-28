@@ -1,0 +1,21 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{parskip}
+\usepackage{amsmath} %Always include this when using maths - it has some very important features.
+
+\begin{document}
+Maths is the most important feature in \LaTeX. Inline maths is created using dollar signs, e.g.\ $e^{i\theta}=\cos\theta + i\sin\theta$. It is highly advisable to include the \texttt{amsmath} package when using maths.
+
+Equations on their own line are created using the \texttt{equation} environment:
+
+\begin{equation}
+  \sigma_{xx} =
+  \begin{bmatrix}
+    \sigma_{xx} & \tau_{xy}   & \tau_{xz}   \\
+    \tau_{yx}   & \sigma_{yy} & \tau_{yz}   \\
+    \tau_{zx}   & \tau_{zy}   & \sigma_{zz} \\
+  \end{bmatrix}
+  \label{eqn:stressTensor}
+\end{equation}
+
+Equation \ref{eqn:stressTensor} shows an example of a stress tensor equation.
+\end{document}
