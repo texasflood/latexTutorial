@@ -1,4 +1,19 @@
-\documentclass[a4paper,12pt]{article}
+%This is an example of a comment. Anything followed by a percentage sign is ignored by the compiler.
+%Comments are used to annotate your code
+
+%Start of preamble
+\documentclass[a4paper,12pt]{article} %This line should always be at the top
+\usepackage{parskip} %The parskip package is very important in my opinion. It allows a blank line to constitute a paragraph break
+%End of preamble. The preamble is where you add packages and set options for the file
+
 \begin{document}
-  Hello World!
+Hello World!
+
+This is an example of a basic document. A \LaTeX\ document is created by making a text file with the code for the document. Then a special program, called a compiler, processes the document and produces the output.
+
+The default output format produces a ``.dvi'' file, but most of the time, you want a ``.pdf'' file. To do this, you must use ``pdfTex'', which is one of the many compilers available for \LaTeX.
+
+The margins are quite wide here, as this is the default setting in \LaTeX. To change this, use the \texttt{geometry} package as shown in the ``margin'' example.
+
+Make sure you read the comments in the code for this document.
 \end{document}
