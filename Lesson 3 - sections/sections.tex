@@ -4,21 +4,47 @@
 \title{How to add a title, sections and a contents page}
 \date{\today}
 \author{Anas Syed}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{4}
 
+\usepackage[none]{hyphenat}
+\usepackage{xcolor}
+\usepackage[]{amsmath}
 \begin{document}
+\raggedright
 \maketitle
 \newpage % The \newpage command creates a new page. Here, it is used to ensure the title has its own page. It is optional here.
 \tableofcontents
 \newpage % This ensures that the table of contents also has its own page. Try removing this and see what happens.
 
 \section{This is the first section}
-To make a title, you need to do two things. First, add at least one of the following lines to the preamble:
+To make a title, you need to do two things. First, add at least one of the following lines to the preamble: 
 
 \begin{verbatim}
 \title{How to add a title, sections and a contents page}
 \date{\today}
 \author{Anas Syed}
 \end{verbatim}
+
+\begin{center}
+  bye
+  \color{blue}
+  Hello
+\end{center}
+
+An {\color{blue} example} of an equation is {\color{red} $y=x^2$}, this is a simple quadratic. We also have {\color{red}$$ \int_{-\infty}^{\infty}x^2 dx $$} which is an integral. \( y=x^2 \) is another equation.
+
+\begin{align}
+   \color{red}
+  y &= x^3 \\
+  & = x^4
+\end{align}
+
+\begin{equation}
+  {\color{magenta}y =} \sin(x)
+\end{equation}
+
+\textbf{This is a bold sentence.} \textit{This is an italic sentence.} \textbf{\textit{This is a bold and italic sentence.}} \underline{This is underlined.}
 
 Then, add the \verb|\maketitle| command anywhere in the document. You could even have the title at the bottom!
 
@@ -47,8 +73,8 @@ This subsection is numbered 2.1. If you don't want to number a section, just put
 
 \subsection*{Another subsection}
 Here is another subsection, but here you can see it has not been numbered due to the use of an asterisk.
+As you can see, this subsection is numbered as 2.2, because the previous subsection skipped the numbering.  Clashes have erupted between protesters and police in the Ukrainian capital, Kiev, as MPs gave their initial backing to reforms for greater autonomy in the disputed east of the country.  Around 20 police were hurt in an explosion after demonstrators tried to break down the fence around parliament.  During a noisy session of Ukraine's parliament, MPs voted to approve more powers in areas of Donetsk and Luhansk under control of pro-Russian rebels.  A fragile ceasefire is in place.  Pushing through greater autonomy for the rebel-held areas is a key part of the Minsk deal, originally signed in February.  During the summer fighting between Ukrainian army forces and the rebels has escalated. But the two sides agreed last week to halt the violence on 1 September, the day children in the region return to school.  
 
 \subsection{A third subsection}
-As you can see, this subsection is numbered as 2.2, because the previous subsection skipped the numbering.
-
+As you can see, this subsection is numbered as 2.2, because the previous subsection skipped the numbering.  Clashes have erupted between protesters and police in the Ukrainian capital, Kiev, as MPs gave their initial backing to reforms for greater autonomy in the disputed east of the country.  Around 20 police were hurt in an explosion after demonstrators tried to break down the fence around parliament.  During a noisy session of Ukraine's parliament, MPs voted to approve more powers in areas of Donetsk and Luhansk under control of pro-Russian rebels.  A fragile ceasefire is in place.  Pushing through greater autonomy for the rebel-held areas is a key part of the Minsk deal, originally signed in February.  During the summer fighting between Ukrainian army forces and the rebels has escalated. But the two sides agreed last week to halt the violence on 1 September, the day children in the region return to school.  
 \end{document}
